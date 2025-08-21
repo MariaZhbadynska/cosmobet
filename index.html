@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-logo">
+            <img src="./imgs/logo.png" alt="Cosmobet" width="180" height="auto">
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <button class="burger" aria-label="Відкрити меню" aria-controls="mobile-menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <a href="#" class="logo" aria-label="Cosmobet — на головну">
+                    <img src="./imgs/logo.png" alt="Cosmobet" height="35">
+                </a>
+
+                <nav class="nav nav--left" aria-label="Головне меню">
+                    <a href="#">Home</a>
+                    <a href="#">Review</a>
+                    <a href="#">Bonus</a>
+                    <a href="#">Spins</a>
+                </nav>
+
+                <div class="nav nav--right">
+                    <div class="nav--right_buttons">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#authModal"
+                            data-bs-tab="register">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Мобільне меню">
+        <button class="close-btn" aria-label="Закрити меню">✕</button>
+        <a href="#">Home</a>
+        <a href="#">Review</a>
+        <a href="#">Bonus</a>
+        <a href="#">Spins</a>
+    </nav>
+
+    <main>
+
+
+        <section class="bonus-banner">
+            <div class="container">
+                <div class="bonus-banner__inner">
+
+                    <img src="./imgs/banner_img.jpeg" alt="Cosmobet Bonus Banner" width="1200" height="500">
+
+
+                    <div class="bonus-banner__overlay"></div>
+                    <div class="bonus-banner__content">
+                        <h2>Free bonus</h2>
+                        <button class="btn-bonus" type="button">Get bonus</button>
+                    </div>
+                </div>
+
+                <section class="intro">
+                    <h1>Cosmobet Casino</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed eu eros eget nunc fermentum venenatis. Integer facilisis
+                        mauris id augue elementum, vel malesuada nunc luctus.
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="hero-slider container">
+            <div class="swiper hero-swiper" aria-label="Головний слайдер">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide"><img src="./imgs/firstImg_slider.jpeg" alt="Slide 1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide"><img src="./imgs/secImg_slider.jpeg" alt="Slide 2" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide"><img src="./imgs/thirdImg_slider.jpeg" alt="Slide 3" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide"><img src="./imgs/fourthImg_slider.jpeg" alt="Slide 4" loading="lazy"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide"><img src="./imgs/fifthImg_slider.jpeg" alt="Slide 5" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev" aria-label="Попередній слайд"></div>
+                <div class="swiper-button-next" aria-label="Наступний слайд"></div>
+                <div class="swiper-pagination" aria-label="Пагінація слайдера"></div>
+            </div>
+        </section>
+
+        <section class="cats">
+            <div class="container">
+                <div class="swiper cats-swiper" aria-label="Категорії">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/sport.png"
+                                    alt="Sports" width="64" height="64" loading="lazy"><span>Sports</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/casino.png"
+                                    alt="Casino" width="64" height="64" loading="lazy"><span>Casino</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/minigames.png"
+                                    alt="Mini Games" width="64" height="64" loading="lazy"><span>Mini Games</span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/livecasino.png"
+                                    alt="Live Casino" width="64" height="64" loading="lazy"><span>Live Casino</span></a>
+                        </div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/esports.png"
+                                    alt="ESports" width="64" height="64" loading="lazy"><span>ESports</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/live.png"
+                                    alt="Live" width="64" height="64" loading="lazy"><span>Live</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__payments">
+                <a href="#"><img src="./imgs/paymethods/visa.png" alt="Visa" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/mastercard.svg" alt="Mastercard" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/skrill.svg" alt="Skrill" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/netteler.svg" alt="Neteller" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/paysafecard.svg" alt="PaysafeCard" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/btc.svg" alt="Bitcoin" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/trx.svg" alt="Tron TRX" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/litecoin.svg" alt="Litecoin" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/etherium.svg" alt="Ethereum" loading="lazy"></a>
+                <a href="#"><img src="./imgs/paymethods/doge.svg" alt="Dogecoin" loading="lazy"></a>
+            </div>
+
+            <div class="footer__providers">
+                <a href="#"><img src="./imgs/bottomIcons/booongo.svg" alt="Booongo" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/evoplay.svg" alt="Evoplay" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/habanero.png" alt="Habanero" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/pragmatic.svg" alt="Pragmatic Play" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/game art.png" alt="GameArt" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/thunderspin.svg" alt="Thunderspin" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/endorphina.svg" alt="Endorphina" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/playngo.svg" alt="Play’n GO" loading="lazy"></a>
+                <a href="#"><img src="./imgs/bottomIcons/hacksaw.svg" alt="Hacksaw" loading="lazy"></a>
+            </div>
+
+            <div class="footer__links">
+                <div>
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="#">Sports Betting</a></li>
+                        <li><a href="#">Virtual Sports</a></li>
+                        <li><a href="#">E-Sport</a></li>
+                        <li><a href="#">Mini Games</a></li>
+                        <li><a href="#">Casino</a></li>
+                        <li><a href="#">Live Casino</a></li>
+                        <li><a href="#">Accounts & Bonuses</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Company Details</a></li>
+                        <li><a href="#">Responsible Gaming</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Sportsbook Terms</a></li>
+                        <li><a href="#">Cosmobet News</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">KYC/AML Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Dispute Resolution</a></li>
+                        <li><a href="#">Self Exclusion</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:support@cosmobet.com">Support@Cosmobet.com</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="mailto:affiliates@cosmobet.com">Affiliates@Cosmobet.com</a></li>
+                        <li><a href="#">VIP</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-icons" aria-hidden="true">
+                    <img src="./imgs/18plus.png" alt="18+" width="20" height="20" loading="lazy">
+                    <img src="./imgs/ssl.png" alt="SSL" width="20" height="20" loading="lazy">
+                </div>
+                <strong>Attention!</strong>
+                <span>
+                    It is gambling advertising. Gambling is not suitable for solving financial problems.
+                    Please read terms and conditions and play responsibly. 18+
+                </span>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true" aria-labelledby="authModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white rounded-3 shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="authModalLabel">Cosmobet Casino</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Закрити"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="authTabs" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                type="button" role="tab">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#register"
+                                type="button" role="tab">Register</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="authTabsContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label" for="loginEmail">Email</label>
+                                    <input id="loginEmail" type="email" class="form-control" placeholder="you@email.com"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="loginPass">Password</label>
+                                    <input id="loginPass" type="password" class="form-control"
+                                        placeholder="Your password" required>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="link-light">Forgot?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="firstName">First Name</label>
+                                        <input id="firstName" type="text" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="lastName">Last Name</label>
+                                        <input id="lastName" type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="regEmail">Email</label>
+                                    <input id="regEmail" type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="regPass">Password</label>
+                                    <input id="regPass" type="password" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="regPass2">Confirm Password</label>
+                                    <input id="regPass2" type="password" class="form-control" required>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="agree" required>
+                                    <label class="form-check-label" for="agree">
+                                        I agree to the <a href="#" class="link-light">Terms &amp; Conditions</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
+</body>
+
+</html>
