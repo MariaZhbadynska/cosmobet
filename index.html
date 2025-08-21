@@ -19,7 +19,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <button class="burger" aria-label="Відкрити меню" aria-controls="mobile-menu" aria-expanded="false">
+                <button class="burger" aria-controls="mobile-menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
 
@@ -50,6 +50,11 @@
         <a href="#">Review</a>
         <a href="#">Bonus</a>
         <a href="#">Spins</a>
+        <div class="mobile-nav--right_buttons">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#authModal"
+                data-bs-tab="register">Register</button>
+        </div>
     </nav>
 
     <main>
@@ -107,22 +112,29 @@
 
         <section class="cats">
             <div class="container">
-                <div class="swiper cats-swiper" aria-label="Категорії">
+                <div class="swiper cats-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/sport.png"
-                                    alt="Sports" width="64" height="64" loading="lazy"><span>Sports</span></a></div>
+                                    alt="Sports"><span>Sports</span></a></div>
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/casino.png"
-                                    alt="Casino" width="64" height="64" loading="lazy"><span>Casino</span></a></div>
+                                    alt="Casino"><span>Casino</span></a></div>
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/minigames.png"
-                                    alt="Mini Games" width="64" height="64" loading="lazy"><span>Mini Games</span></a>
+                                    alt="Mini Games"><span>Mini Games</span></a>
                         </div>
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/livecasino.png"
-                                    alt="Live Casino" width="64" height="64" loading="lazy"><span>Live Casino</span></a>
+                                    alt="Live Casino"><span>Live Casino</span></a>
                         </div>
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/esports.png"
-                                    alt="ESports" width="64" height="64" loading="lazy"><span>ESports</span></a></div>
+                                    alt="ESports"><span>ESports</span></a></div>
                         <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/live.png"
-                                    alt="Live" width="64" height="64" loading="lazy"><span>Live</span></a></div>
+                                    alt="Live"><span>Live</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/sport.png"
+                                    alt="Sports"><span>Sports</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/casino.png"
+                                    alt="Casino"><span>Casino</span></a></div>
+                        <div class="swiper-slide"><a class="cat-card" href="#"><img src="./imgs/category/minigames.png"
+                                    alt="Mini Games"><span>Mini Games</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
