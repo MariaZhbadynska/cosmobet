@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   if (!pre) return;
 
   pre.classList.add("fade-out");
-  setTimeout(() => pre.remove(), 800);
+  setTimeout(() => pre.remove(), 1100);
 });
 
   document.addEventListener("DOMContentLoaded", () => {
