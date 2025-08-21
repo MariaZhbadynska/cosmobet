@@ -1,13 +1,11 @@
 window.addEventListener("load", () => {
-    const pre = document.getElementById("preloader");
-    if (!pre) return;
-  
-    pre.style.transition = "opacity 4s ease";
-    pre.style.opacity = "0";
-  
-    setTimeout(() => pre.remove(), 2000);
-  });
-  
+  const pre = document.getElementById("preloader");
+  if (!pre) return;
+
+  pre.classList.add("fade-out");
+  setTimeout(() => pre.remove(), 800);
+});
+
   document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector(".burger");
     const menu = document.getElementById("mobile-menu");
